@@ -1,0 +1,77 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-14T04:42:52.856Z",
+    "end": "2019-06-14T04:42:57.823Z",
+    "duration": 4967,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "ac7fd285-6c48-4d06-9edd-770511b48b7a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "5c1ef322-ca42-4880-b25b-fbb1d20002a5",
+        "title": "Test EA Application",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Performing Benefit check",
+            "fullTitle": "Test EA Application Performing Benefit check",
+            "duration": 0,
+            "state": "skipped",
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "cy.percySnapshot(); //Click Employee List\ncy.contains(\"Employee List\").click();\ncy.get('.table').find('tr').contains('Prashanthsss').parent().contains('Benefits').click();\ncy.get('.table').find('tr').as(\"rows\");\ncy.get(\"@rows\").then(function ($row) {\n  cy.wrap($row).click({\n    multiple: true\n  });\n}); //Verify the value from a property\ncy.wrap({\n  name: 'Karthik'\n}).should('have.property', 'name').and('eq', 'Karthik'); // //Using Wrap\n// cy.get('.table').find('tr > td').then(($td) => {\n//     cy.wrap($td).contains(\"John\").invoke(\"wrap\").parent().contains(\"Benefits\").click();\n// })\ncy.percySnapshot(\"After\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b646ea1a-ef63-4f2f-8d95-c6e18f897caf",
+            "isHook": false,
+            "skipped": true
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [
+          "b646ea1a-ef63-4f2f-8d95-c6e18f897caf"
+        ],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

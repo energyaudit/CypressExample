@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-14T04:44:06.989Z",
+    "end": "2019-06-14T04:44:07.365Z",
+    "duration": 376,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "57ca00bf-bb0c-4c65-92f1-1f29d789663a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "331db4d3-d90e-4071-9790-bdefdd924fa1",
+        "title": "Test API from the Fake JSON Server",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "API testing",
+            "fullTitle": "Test API from the Fake JSON Server API testing",
+            "duration": 358,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.request({\n  method: 'POST',\n  url: 'http://eaapp.somee.com/Account/Login',\n  body: {\n    \"__RequestVerificationToken\": \"jJ27CGSB6SHC24F0oV5nGIcKmDPqG2WfwOCDZxTUIhJ8Tk9TiSYlzhrzuhP5Ct2rHTiOY46WawRVGy6qanY18HsdbKEeK0TqWjgOY9b6RZE1\",\n    \"UserName\": \"admin\",\n    \"Password\": \"password\",\n    \"RememberMe\": \"false\"\n  },\n  failOnStatusCode: false\n}).then(function ($res) {\n  expect($res.status).to.eql(500);\n  expect($res.body).to.contain('<i>The required anti-forgery cookie &quot;__RequestVerificationToken&quot; is not present.</i>');\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "71264fc0-b029-497a-bad4-6d5aa9c9bfb6",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "71264fc0-b029-497a-bad4-6d5aa9c9bfb6"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 358,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

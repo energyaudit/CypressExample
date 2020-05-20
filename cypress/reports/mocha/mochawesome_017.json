@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-14T04:44:54.210Z",
+    "end": "2019-06-14T04:45:58.961Z",
+    "duration": 64751,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "a83777b1-cacd-45b0-853e-b699653c3a62",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "018bbeaa-aa02-4d5f-b62f-9010f1124308",
+        "title": "Actions",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Perform iFrame data entry",
+            "fullTitle": "Actions Perform iFrame data entry",
+            "duration": 64730,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "cy.get(\"#txtName\").type(\"Cypress\");\ncy.get(\"#frame\").then(function ($iframe) {\n  var $body = $iframe.contents().find('body'); //store into alias\n  cy.wrap($body).as('iframe');\n});\ncy.get(\"@iframe\").find(\"#txtNameWithiniFrame\").type(\"text within iframe\");",
+            "err": {
+              "message": "CypressError: cy.visit() failed trying to load:\n\nhttp://eaapp.somee.com/iframeapp.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Actions'",
+              "estack": "CypressError: cy.visit() failed trying to load:\n\nhttp://eaapp.somee.com/iframeapp.html\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Actions'\n    at Object.cypressErr (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:83220:11)\n    at Object.throwErr (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:83185:18)\n    at Object.throwErrByPath (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:83212:17)\n    at http://eaapp.somee.com/__cypress/runner/cypress_runner.js:73606:31\n    at visitFailedByErr (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:73175:12)\n    at http://eaapp.somee.com/__cypress/runner/cypress_runner.js:73587:22\n    at tryCatcher (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:132142:23)\n    at Promise._settlePromiseFromHandler (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:130160:31)\n    at Promise._settlePromise (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:130217:18)\n    at Promise._settlePromise0 (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:130262:10)\n    at Promise._settlePromises (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:130337:18)\n    at Async._drainQueue (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:127066:16)\n    at Async._drainQueues (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:127076:10)\n    at Async.drainQueues (http://eaapp.somee.com/__cypress/runner/cypress_runner.js:126950:14)"
+            },
+            "isRoot": false,
+            "uuid": "a8584e5b-08e8-41c2-a463-4ca685756963",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "a8584e5b-08e8-41c2-a463-4ca685756963"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 64730,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

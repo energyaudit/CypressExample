@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-14T04:44:44.208Z",
+    "end": "2019-06-14T04:44:50.865Z",
+    "duration": 6657,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "a053f459-f1da-4445-9633-236190f12cdc",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "a4cfdbcd-c595-4c38-9c26-d33615dba033",
+        "title": "Actions",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "File upload demo",
+            "fullTitle": "Actions File upload demo",
+            "duration": 3743,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "cy.percySnapshot(\"Before\");\ncy.fixture('EAWeekly.png', 'base64').then(function (fileContent) {\n  cy.get('#fine-uploader-s3 > .qq-uploader-selector > .qq-upload-button-selector > input').upload({\n    fileContent: fileContent,\n    fileName: 'EAWeekly.png',\n    mimeType: 'image/png'\n  }, {\n    uploadType: 'input'\n  });\n});\ncy.percySnapshot(\"after\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4b0115c9-d888-4c4b-b948-8abdba9e8c88",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "4b0115c9-d888-4c4b-b948-8abdba9e8c88"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3743,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

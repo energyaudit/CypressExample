@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2019-06-14T04:46:04" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Test LambdaTest Website XHR" timestamp="2019-06-14T04:46:04" tests="2" failures="2" time="0">
+    <testcase name="Test LambdaTest Website XHR Perform Login and verify XHR" time="0" classname="Perform Login and verify XHR">
+      <failure message="Cannot read property &apos;status&apos; of null" type="TypeError"><![CDATA[TypeError: Cannot read property 'status' of null
+    at Context.<anonymous> (https://accounts.lambdatest.com/__cypress/tests?p=cypress/integration/examples/TestXHR.spec.js-884:29:18)]]></failure>
+    </testcase>
+    <testcase name="Test LambdaTest Website XHR Verify LambdaTest cookies" time="0" classname="Verify LambdaTest cookies">
+      <failure message="Cannot read property &apos;value&apos; of null" type="TypeError"><![CDATA[TypeError: Cannot read property 'value' of null
+    at Assertion.<anonymous> (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:8553:14)
+    at Assertion.ctx.<computed> [as property] (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:11566:25)
+    at applyChainer (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:71368:32)
+    at https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:71393:18
+    at arrayReduce (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:28516:21)
+    at Function.reduce (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:37516:14)
+    at applyChainers (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:71386:16)
+    at tryCatcher (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:132142:23)
+    at Function.Promise.attempt.Promise.try (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:129516:29)
+    at Context.shouldFn (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:71397:26)
+    at Context.should (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:71409:23)
+    at Context.<anonymous> (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:79014:21)
+    at https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:78719:33
+    at tryCatcher (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:132142:23)
+    at Promise._settlePromiseFromHandler (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:130160:31)
+    at Promise._settlePromise (https://accounts.lambdatest.com/__cypress/runner/cypress_runner.js:130217:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > mochareports/report.json",
+    "generate-report": "marge mochareports/*.json -f report -o mochareports",
+    "cypress:ui": "cypress open"
+  },
+  "dependencies": {
+    "@types/cypress": "^1.1.3",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@percy/cypress": "^1.0.9",
+    "cypress": "^3.2.0",
+    "cypress-cucumber-preprocessor": "^1.11.0",
+    "cypress-dark": "^1.7.11",
+    "cypress-file-upload": "^3.1.2",
+    "cypress-multi-reporters": "^1.1.23",
+    "cypress-xpath": "^1.4.0",
+    "mocha": "^6.1.4",
+    "mochawesome": "^4.0.1",
+    "mochawesome-merge": "^2.0.1",
+    "mochawesome-report-generator": "^4.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
