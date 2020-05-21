@@ -409,3 +409,8 @@ export function calculateAge(birthYear) {
   var n = d.getFullYear();
   return n - birthYear;
 }
+
+export function wordsRepeatTimes(str, word) {
+  var number = str.split(word).length - 1;
+  return number;
+}

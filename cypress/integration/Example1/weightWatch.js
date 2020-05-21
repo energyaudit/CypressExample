@@ -90,7 +90,7 @@ describe("Testing of weight watch suites", () => {
       win.scrollTo(0, 800);
     });
   });
-  it("Step8-9:Each day meetings", () => {
+  it.only("Step8-9:Each day meetings", () => {
     let sun;
     goHome(url);
     cy.title().should(
@@ -159,5 +159,41 @@ describe("Testing of weight watch suites", () => {
       "contain",
       "Sat   8:30 AM ROBERT B.  10:00 AM ROBERT B.  11:30 AM ROBERT B"
     );
+    var weekTest = [
+      "Sun   9:00 AM JOHN B.  10:30 AM JOHN B.  12:00 PM JOHN B",
+      "Mon   8:15 AM DANA F.  12:30 PM LISA S.  6:00 PM LISA S",
+      "Tue   11:15 AM LAUREN C.  12:15 PM LAUREN C.  5:15 PM ARANSAS S.  6:45 PM ARANSAS S",
+      "Wed   10:00 AM CAMI B.  12:15 PM CAMI B.  5:30 PM MARIA S",
+      "Thu   8:15 AM STEVEN H.  9:15 AM STEVEN H.  12:15 PM DIANE M.  5:15 PM MINDI K.  6:15 PM MINDI K",
+      "Fri   8:15 AM SILMARA R.  12:15 PM SILMARA R.  5:30 PM RICARDO M",
+      "Sat   8:30 AM ROBERT B.  10:00 AM ROBERT B.  11:30 AM ROBERT B",
+    ];
+    var list = [
+      "JOHN",
+      "DANA",
+      "LISA",
+      "LAUREN",
+      "ARANSAS",
+      "CAMI",
+      "MARIA",
+      "STEVEN",
+      "MINDI",
+      "SILMARA",
+      "RICARDO",
+      "ROBERT",
+    ];
+    for (var i = 0; i < weekTest.length; i++) {
+      for (var j = 0; j < list.length; j++) {
+        if (utils.wordsRepeatTimes(weekTest[i], list[j]) != 0) {
+          console.log(
+            weekTest[i] +
+              ":" +
+              list[j] +
+              "::" +
+              utils.wordsRepeatTimes(weekTest[i], list[j])
+          );
+        }
+      }
+    }
   });
 });
