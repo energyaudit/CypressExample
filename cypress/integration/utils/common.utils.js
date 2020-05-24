@@ -414,3 +414,12 @@ export function wordsRepeatTimes(str, word) {
   var number = str.split(word).length - 1;
   return number;
 }
+export function sum(...numbers) {
+  var result = 0;
+  numbers.forEach(function (number) {
+    result += number;
+  });
+  return result;
+}
+
+export function arrMin = (arr) => Math.min(...arr);

@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+//import arrMin from "../utils/common.utils";
 var firstName = "John";
 console.log(firstName);
 
@@ -1088,3 +1090,6 @@ for (var i = 1; i < 101; i++) {
   else if (i % 5 == 0) console.log("Buzz");
   else console.log(i);
 }
+
+arryMath = [20, 10, 5, 10];
+console.log("Math.min(...arr)", utils.arrMin(arryMath));
