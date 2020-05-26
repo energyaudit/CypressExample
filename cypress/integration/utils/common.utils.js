@@ -422,4 +422,11 @@ export function sum(...numbers) {
   return result;
 }
 
-export function arrMin = (arr) => Math.min(...arr);
+export const arrMin = (arr) => Math.min(...arr);
+export function calcAverage(tips) {
+  var sum = 0;
+  for (var i = 0; i < tips.length; i++) {
+    sum = sum + tips[i];
+  }
+  return sum / tips.length;
+}
