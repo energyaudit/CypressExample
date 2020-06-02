@@ -423,10 +423,33 @@ export function sum(...numbers) {
 }
 
 export const arrMin = (arr) => Math.min(...arr);
+export const arrMax = (arr) => Math.max(...arr);
+export const arrSum = (arr) => arr.reduce((a, b) => a + b, 0);
 export function calcAverage(tips) {
   var sum = 0;
   for (var i = 0; i < tips.length; i++) {
     sum = sum + tips[i];
   }
   return sum / tips.length;
+}
+
+export function findMostReaptedWord(str) {
+  var res = str.split(" ");
+
+  var count;
+  var compareString;
+  for (var i = 0; i < res.length; i++) {
+    count = 0;
+    compareString = res[i];
+    for (j = 0; i < res.lenth; j++) {
+      if (compareString == res[j]) {
+        count++;
+      }
+    }
+  }
+}
+
+export function wordsRepeatTimes1(str, word) {
+  var number = str.split(word).length - 1;
+  return number;
 }
