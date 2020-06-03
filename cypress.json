@@ -2,7 +2,6 @@
   "vedio": true,
   "chromeWebSecurity": false,
   "pageLoadTimeout": 36000,
-  "baseUrl": "http://eaapp.somee.com",
   "env": {
     "username": "admin",
     "HOST_DOMAIN": "https:/"
