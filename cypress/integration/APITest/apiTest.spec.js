@@ -1,14 +1,14 @@
 /// <reference types="Cypress" />
 context("Test API from the Fake JSON serer", () => {
-  beforeEach("DELETE before creating a new value", () => {
-    cy.request({
-      method: "DELETE",
-      url: "http://localhost:3000/posts/2",
-      failOnStatusCode: false,
-    }).then((x) => {
-      expect(x.body).to.be.empty;
-    });
-  });
+  // beforeEach("DELETE before creating a new value", () => {
+  //   cy.request({
+  //     method: "DELETE",
+  //     url: "http://localhost:3000/posts/2",
+  //     failOnStatusCode: false,
+  //   }).then((x) => {
+  //     expect(x.body).to.be.empty;
+  //   });
+  // });
 
   it("Test GET functionality of JSON server", () => {
     cy.request("http://localhost:3000/posts/1")
@@ -17,11 +17,12 @@ context("Test API from the Fake JSON serer", () => {
   });
 
   it("Test POST functionality of JSON Server", () => {
+    let idInput = Math.floor(length + Math.random() * length * 9);
     cy.request({
       method: "POST",
       url: "http://localhost:3000/posts",
       body: {
-        id: 2,
+        id: idInput,
         title: "Automation",
         author: "billy",
       },
