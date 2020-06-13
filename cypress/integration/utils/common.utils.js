@@ -453,3 +453,7 @@ export function wordsRepeatTimes1(str, word) {
   var number = str.split(word).length - 1;
   return number;
 }
+
+export function reverseBySeparator(string, separator) {
+  return string.split(separator).reverse().join(separator);
+}
