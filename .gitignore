@@ -6,6 +6,8 @@ results/
 cypress/results/
 mochareports/
 cypress/reports/
+**/reports/
+cypress/reports/mocha
 cypress/screenshots/
 cypress/videos/
 
@@ -31,3 +33,6 @@ node_modules/
 ### Gradle ###
 .gradle
 build/
+### report file by type ###
+*.mp4
+*.png
