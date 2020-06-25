@@ -457,3 +457,11 @@ export function wordsRepeatTimes1(str, word) {
 export function reverseBySeparator(string, separator) {
   return string.split(separator).reverse().join(separator);
 }
+
+export function age(years) {
+  years.map((el, index) => {
+    const now = new Date().getFullYear();
+    const age = now - el;
+    return `Age element ${index + 1}: ${age}.`;
+  });
+}

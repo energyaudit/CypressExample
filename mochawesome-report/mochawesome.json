@@ -1,0 +1,156 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-06-25T22:48:23.739Z",
+    "end": "2020-06-25T22:48:25.364Z",
+    "duration": 1625,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "144992f1-9ec8-4fa3-b6e8-08b0600a1705",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b503848c-31a5-4415-b5ce-83f0d4f61ba2",
+          "title": "API Testing with Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate the header",
+              "fullTitle": "API Testing with Cypress Validate the header",
+              "timedOut": null,
+              "duration": 766,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "result = cy.request('http://services.groupkt.com/country/get/iso2code/AU');\nresult.its('headers').its('content-type').should('include', 'application/json');",
+              "err": {
+                "message": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n",
+                "estack": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n\n    at Object.cypressErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65727:11)\n    at Object.throwErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65692:18)\n    at Object.throwErrByPath (http://localhost:52498/__cypress/runner/cypress_runner.js:65719:17)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:57021:23\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:126600:37\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52498/__cypress/runner/cypress_runner.js:129291:31)\n    at Promise._settlePromise (http://localhost:52498/__cypress/runner/cypress_runner.js:129348:18)\n    at Promise._settlePromise0 (http://localhost:52498/__cypress/runner/cypress_runner.js:129393:10)\n    at Promise._settlePromises (http://localhost:52498/__cypress/runner/cypress_runner.js:129468:18)\n    at Async._drainQueue (http://localhost:52498/__cypress/runner/cypress_runner.js:126197:16)\n    at Async._drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126207:10)\n    at Async.drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126081:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "ca5f41f7-84a4-4978-87a8-41d1537e710d",
+              "parentUUID": "b503848c-31a5-4415-b5ce-83f0d4f61ba2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate the status",
+              "fullTitle": "API Testing with Cypress Validate the status",
+              "timedOut": null,
+              "duration": 366,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "result = cy.request('http://services.groupkt.com/country/get/iso2code/AU');\nresult.its('status').should('equal', 200);",
+              "err": {
+                "message": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n",
+                "estack": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n\n    at Object.cypressErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65727:11)\n    at Object.throwErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65692:18)\n    at Object.throwErrByPath (http://localhost:52498/__cypress/runner/cypress_runner.js:65719:17)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:57021:23\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:126600:37\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52498/__cypress/runner/cypress_runner.js:129291:31)\n    at Promise._settlePromise (http://localhost:52498/__cypress/runner/cypress_runner.js:129348:18)\n    at Promise._settlePromise0 (http://localhost:52498/__cypress/runner/cypress_runner.js:129393:10)\n    at Promise._settlePromises (http://localhost:52498/__cypress/runner/cypress_runner.js:129468:18)\n    at Async._drainQueue (http://localhost:52498/__cypress/runner/cypress_runner.js:126197:16)\n    at Async._drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126207:10)\n    at Async.drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126081:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "427154c5-86b0-4909-bb5b-b38e08a06c65",
+              "parentUUID": "b503848c-31a5-4415-b5ce-83f0d4f61ba2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate the body ",
+              "fullTitle": "API Testing with Cypress Validate the body ",
+              "timedOut": null,
+              "duration": 331,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "result = cy.request('http://services.groupkt.com/country/get/iso2code/AU');\nresult.its('body').its('RestResponse.messages').should('include', 'Country found matching code [AU].');",
+              "err": {
+                "message": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n",
+                "estack": "CypressError: cy.request() failed trying to load:\n\nhttp://services.groupkt.com/country/get/iso2code/AU\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: http://services.groupkt.com/country/get/iso2code/AU\n\n-----------------------------------------------------------\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nThe stack trace for this error is:\n\nRequestError: Error: getaddrinfo ENOTFOUND services.groupkt.com services.groupkt.com:80\n    at new RequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/errors.js:14:15)\n    at Request.plumbing.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:87:29)\n    at Request.RP$callback [as _callback] (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at self.callback (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:185:22)\n    at emitOne (events.js:115:13)\n    at Request.emit (events.js:210:7)\n    at Request.onRequestError (/Users/pro/Library/Caches/Cypress/3.2.0/Cypress.app/Contents/Resources/app/packages/server/node_modules/request/request.js:881:8)\n    at emitOne (events.js:120:20)\n    at ClientRequest.emit (events.js:210:7)\n    at Socket.socketErrorListener (_http_client.js:401:9)\n    at emitOne (events.js:115:13)\n    at Socket.emit (events.js:210:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)\n\n    at Object.cypressErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65727:11)\n    at Object.throwErr (http://localhost:52498/__cypress/runner/cypress_runner.js:65692:18)\n    at Object.throwErrByPath (http://localhost:52498/__cypress/runner/cypress_runner.js:65719:17)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:57021:23\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at http://localhost:52498/__cypress/runner/cypress_runner.js:126600:37\n    at tryCatcher (http://localhost:52498/__cypress/runner/cypress_runner.js:131273:23)\n    at Promise._settlePromiseFromHandler (http://localhost:52498/__cypress/runner/cypress_runner.js:129291:31)\n    at Promise._settlePromise (http://localhost:52498/__cypress/runner/cypress_runner.js:129348:18)\n    at Promise._settlePromise0 (http://localhost:52498/__cypress/runner/cypress_runner.js:129393:10)\n    at Promise._settlePromises (http://localhost:52498/__cypress/runner/cypress_runner.js:129468:18)\n    at Async._drainQueue (http://localhost:52498/__cypress/runner/cypress_runner.js:126197:16)\n    at Async._drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126207:10)\n    at Async.drainQueues (http://localhost:52498/__cypress/runner/cypress_runner.js:126081:14)\n    at <anonymous>",
+                "diff": null
+              },
+              "uuid": "f7025806-a636-4128-9165-2fb37cd39b94",
+              "parentUUID": "b503848c-31a5-4415-b5ce-83f0d4f61ba2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ca5f41f7-84a4-4978-87a8-41d1537e710d",
+            "427154c5-86b0-4909-bb5b-b38e08a06c65",
+            "f7025806-a636-4128-9165-2fb37cd39b94"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1463,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

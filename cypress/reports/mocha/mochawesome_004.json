@@ -1,78 +1,49 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2019-06-14T04:39:43.699Z",
-    "end": "2019-06-14T04:39:44.137Z",
-    "duration": 438,
-    "testsRegistered": 1,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2020-06-25T22:01:04.335Z",
+    "end": "2020-06-25T22:01:04.339Z",
+    "duration": 4,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
-    "hasSkipped": false,
-    "passPercentClass": "success",
-    "pendingPercentClass": "danger"
+    "hasSkipped": false
   },
-  "suites": {
-    "uuid": "5b9c87e4-b645-409e-9c23-d92db1c4d9c2",
-    "title": "",
-    "fullFile": "",
-    "file": "",
-    "beforeHooks": [],
-    "afterHooks": [],
-    "tests": [],
-    "suites": [
-      {
-        "uuid": "e32c047e-30b3-47ee-8870-e2f8006ab5e4",
-        "title": "Test API from the Fake JSON Server",
-        "fullFile": "",
-        "file": "",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "API testing",
-            "fullTitle": "Test API from the Fake JSON Server API testing",
-            "duration": 416,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "cy.request({\n  method: 'POST',\n  url: 'http://eaapp.somee.com/Account/Login',\n  body: {\n    \"__RequestVerificationToken\": \"jJ27CGSB6SHC24F0oV5nGIcKmDPqG2WfwOCDZxTUIhJ8Tk9TiSYlzhrzuhP5Ct2rHTiOY46WawRVGy6qanY18HsdbKEeK0TqWjgOY9b6RZE1\",\n    \"UserName\": \"admin\",\n    \"Password\": \"password\",\n    \"RememberMe\": \"false\"\n  },\n  failOnStatusCode: false\n}).then(function ($res) {\n  expect($res.status).to.eql(500);\n  expect($res.body).to.contain('<i>The required anti-forgery cookie &quot;__RequestVerificationToken&quot; is not present.</i>');\n});",
-            "err": {},
-            "isRoot": false,
-            "uuid": "ec60d959-4152-4101-8701-3f5f267d3582",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "ec60d959-4152-4101-8701-3f5f267d3582"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 416,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      }
-    ],
-    "passes": [],
-    "failures": [],
-    "pending": [],
-    "skipped": [],
-    "duration": 0,
-    "root": true,
-    "rootEmpty": true,
-    "_timeout": 2000
-  },
-  "copyrightYear": 2019
+  "results": [
+    false
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
 }
