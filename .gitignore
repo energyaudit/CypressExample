@@ -5,6 +5,7 @@
 results/
 cypress/results/
 mochareports/
+mochawesome-report/
 cypress/reports/
 **/reports/
 cypress/reports/mocha
