@@ -37,8 +37,11 @@ If you wish to run using cypress GUI interface:
 
 #### Generate HTML Report
 
-- Run <code>npm run combine-reports</code>.
-- Run <code>npm run generate-report</code> to generate the _html_ report using the _json_ file in the _results_ directory.
+- Run:npx mochawesome-merge --reportDir mochawesome-report >mochareports/report.json
+  -or Run <code>npm run combine-reports</code>.
+- Run:npx marge mochareports/\*.json -f report -o mochareports
+- or Run <code>npm run generate-report</code> to generate the _html_ report using the _json_ file in the _results_ directory.
+- both folder:mochareports and mochawesome-report are on root folder of project
 
 **Note**: The html test report is stored in the directory _cypress/results_.
 
