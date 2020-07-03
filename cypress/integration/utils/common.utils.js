@@ -465,3 +465,13 @@ export function age(years) {
     return `Age element ${index + 1}: ${age}.`;
   });
 }
+export function returnkeyNumberOnlyOfMap(inputMap) {
+  let newMap = new Map();
+  for (let [key, value] of inputMap.entries()) {
+    if (typeof key === "number") {
+      console.log(`Answer ${key}: ${value}`);
+      newMap.set(key, value);
+    }
+  }
+  return newMap;
+}
