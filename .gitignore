@@ -4,7 +4,7 @@
 #Mocha Reports
 results/
 cypress/results/
-mochareports/
+
 mochawesome-report/
 cypress/reports/
 **/reports/
