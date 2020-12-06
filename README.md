@@ -10,6 +10,8 @@ Clone this repository using a git client as a first step, and further run <code>
 
 - run on Cypress Playground:in VSC terminal run: npx cypress open
 - after Cypress Playground opened,click the test script to run:(for Exp) weightWatch.js
+- to support SSL self-signed certificates feature, install cypress at least version above 6.0.1
+- support edge,firefox,suggest install cypress at least version above 6.0.1
 
 If you wish to run as a docker image:
 
@@ -31,7 +33,7 @@ If you wish to run using cypress GUI interface:
 
 #### Downgrade cypress to 3.2.0
 
-- This framework dark theme feature works with cypress 3.2.0 so far,if you run npm install and cypress version above this will cause problem.
+- This framework dark theme feature works with cypress 3.2.0 so far or install version above 6.0.1,if you run npm install and cypress version above this will cause problem.
 - Windows pc: delete the 3.4.0 folder in :/Users/<username>/Library/Caches/Cypress and delete the folder in </project>\node_modules\cypress.
 - run: npm install cypress@3.2.0
 
